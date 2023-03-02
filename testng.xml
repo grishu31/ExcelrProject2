@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testNg.AutoComplete"/>
+      <class name="testNg.Menuu"/>
+      <class name="testNg.Accoridan"/>
+      <class name="testNg.ElementCard"/>
+      <class name="testNg.Button"/>
+      <class name="testNg.DataPicker"/>
+      <class name="testNg.DynamicProperties"/>
+      <class name="testNg.VisitMainPage"/>
+      <class name="testNg.VerifyLogo"/>
+      <class name="testNg.JoinNow"/>
+      <class name="testNg.Draggable"/>
+      <class name="testNg.Alerts"/>
+      <class name="testNg.CheckBox"/>
+      <class name="testNg.Interaction"/>
+      <class name="testNg.Dropable"/>
+      <class name="testNg.Resizeable"/>
+      <class name="testNg.Forms"/>
+      <class name="testNg.AltersFrame"/>
+      <class name="testNg.BookStore"/>
+      <class name="testNg.Frame"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="18" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-02T20:43:27 IST" name="Suite" finished-at="2023-03-02T20:47:14 IST" duration-ms="227445">
+    <groups>
+    </groups>
+    <test started-at="2023-03-02T20:43:27 IST" name="Test" finished-at="2023-03-02T20:47:14 IST" duration-ms="227445">
+      <class name="testNg.Button">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.Button@478190fc]" started-at="2023-03-02T20:44:13 IST" name="setUp" finished-at="2023-03-02T20:44:27 IST" duration-ms="13364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyButtons()[pri:0, instance:testNg.Button@478190fc]" started-at="2023-03-02T20:44:27 IST" name="verifyButtons" finished-at="2023-03-02T20:44:27 IST" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyButtons -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.Button@478190fc]" started-at="2023-03-02T20:44:27 IST" name="tearDown" finished-at="2023-03-02T20:44:28 IST" duration-ms="481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.Button -->
+      <class name="testNg.CheckBox">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.CheckBox@16d04d3d]" started-at="2023-03-02T20:45:52 IST" name="setUp" finished-at="2023-03-02T20:46:01 IST" duration-ms="9871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCheckBox()[pri:0, instance:testNg.CheckBox@16d04d3d]" started-at="2023-03-02T20:46:01 IST" name="verifyCheckBox" finished-at="2023-03-02T20:46:02 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckBox -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.CheckBox@16d04d3d]" started-at="2023-03-02T20:46:02 IST" name="tearDown" finished-at="2023-03-02T20:46:02 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.CheckBox -->
+      <class name="testNg.Draggable">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.Draggable@36bc55de]" started-at="2023-03-02T20:45:31 IST" name="setUp" finished-at="2023-03-02T20:45:42 IST" duration-ms="11055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDraggable()[pri:0, instance:testNg.Draggable@36bc55de]" started-at="2023-03-02T20:45:42 IST" name="verifyDraggable" finished-at="2023-03-02T20:45:42 IST" duration-ms="275" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Cannot find elements when the XPath is null.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
+at org.openqa.selenium.internal.Require$ArgumentChecker.nonNull(Require.java:92)
+at org.openqa.selenium.By$ByXPath.<init>(By.java:287)
+at org.openqa.selenium.By.xpath(By.java:89)
+at testNg.Draggable.verifyDraggable(Draggable.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDraggable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.Draggable@36bc55de]" started-at="2023-03-02T20:45:42 IST" name="tearDown" finished-at="2023-03-02T20:45:43 IST" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.Draggable -->
+      <class name="testNg.Forms">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.Forms@223d2c72]" started-at="2023-03-02T20:46:32 IST" name="setUp" finished-at="2023-03-02T20:46:42 IST" duration-ms="9567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyForms()[pri:0, instance:testNg.Forms@223d2c72]" started-at="2023-03-02T20:46:42 IST" name="verifyForms" finished-at="2023-03-02T20:46:42 IST" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForms -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.Forms@223d2c72]" started-at="2023-03-02T20:46:42 IST" name="tearDown" finished-at="2023-03-02T20:46:42 IST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.Forms -->
+      <class name="testNg.VerifyLogo">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.VerifyLogo@7e07db1f]" started-at="2023-03-02T20:45:08 IST" name="setUp" finished-at="2023-03-02T20:45:19 IST" duration-ms="10776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLogo()[pri:0, instance:testNg.VerifyLogo@7e07db1f]" started-at="2023-03-02T20:45:19 IST" name="verifyLogo" finished-at="2023-03-02T20:45:19 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.VerifyLogo@7e07db1f]" started-at="2023-03-02T20:45:19 IST" name="tearDown" finished-at="2023-03-02T20:45:19 IST" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.VerifyLogo -->
+      <class name="testNg.VisitMainPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.VisitMainPage@35cabb2a]" started-at="2023-03-02T20:44:51 IST" name="setUp" finished-at="2023-03-02T20:45:03 IST" duration-ms="12623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyMainPage()[pri:0, instance:testNg.VisitMainPage@35cabb2a]" started-at="2023-03-02T20:45:03 IST" name="verifyMainPage" finished-at="2023-03-02T20:45:08 IST" duration-ms="4289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMainPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.VisitMainPage@35cabb2a]" started-at="2023-03-02T20:45:08 IST" name="tearDown" finished-at="2023-03-02T20:45:08 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.VisitMainPage -->
+      <class name="testNg.Dropable">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.Dropable@1d2adfbe]" started-at="2023-03-02T20:46:13 IST" name="setUp" finished-at="2023-03-02T20:46:23 IST" duration-ms="9366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDroppable()[pri:0, instance:testNg.Dropable@1d2adfbe]" started-at="2023-03-02T20:46:23 IST" name="verifyDroppable" finished-at="2023-03-02T20:46:23 IST" duration-ms="480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDroppable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.Dropable@1d2adfbe]" started-at="2023-03-02T20:46:23 IST" name="tearDown" finished-at="2023-03-02T20:46:23 IST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.Dropable -->
+      <class name="testNg.Resizeable">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.Resizeable@36902638]" started-at="2023-03-02T20:46:23 IST" name="setUp" finished-at="2023-03-02T20:46:31 IST" duration-ms="8000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyResizable()[pri:0, instance:testNg.Resizeable@36902638]" started-at="2023-03-02T20:46:31 IST" name="verifyResizable" finished-at="2023-03-02T20:46:32 IST" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResizable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.Resizeable@36902638]" started-at="2023-03-02T20:46:32 IST" name="tearDown" finished-at="2023-03-02T20:46:32 IST" duration-ms="492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.Resizeable -->
+      <class name="testNg.BookStore">
+        <test-method is-config="true" signature="bookStore()[pri:0, instance:testNg.BookStore@436813f3]" started-at="2023-03-02T20:46:52 IST" name="bookStore" finished-at="2023-03-02T20:47:02 IST" duration-ms="9848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookStore -->
+        <test-method signature="verifyElements()[pri:0, instance:testNg.BookStore@436813f3]" started-at="2023-03-02T20:47:02 IST" name="verifyElements" finished-at="2023-03-02T20:47:03 IST" duration-ms="1204" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <h5>...</h5> is not clickable at point (153, 624). Other element would receive the click: <div id="fixedban" style="width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999">...</div>
+  (Session info: chrome=110.0.5481.178)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-G78KK4VM', ip: '192.168.194.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9a44d523f41617dccfb608f95b2cd8a4, clickElement {id=50fa97d7-521a-4d9a-a217-e2330fd80b09}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:5499}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5499/devtool..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9a44d523f41617dccfb608f95b2cd8a4)] -> xpath: //h5[text()='Book Store Application']]
+Session ID: 9a44d523f41617dccfb608f95b2cd8a4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <h5>...</h5> is not clickable at point (153, 624). Other element would receive the click: <div id="fixedban" style="width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999">...</div>
+  (Session info: chrome=110.0.5481.178)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LAPTOP-G78KK4VM', ip: '192.168.194.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9a44d523f41617dccfb608f95b2cd8a4, clickElement {id=50fa97d7-521a-4d9a-a217-e2330fd80b09}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:5499}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5499/devtool..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9a44d523f41617dccfb608f95b2cd8a4)] -> xpath: //h5[text()='Book Store Application']]
+Session ID: 9a44d523f41617dccfb608f95b2cd8a4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at testNg.BookStore.verifyElements(BookStore.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyElements -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.BookStore@436813f3]" started-at="2023-03-02T20:47:03 IST" name="tearDown" finished-at="2023-03-02T20:47:04 IST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.BookStore -->
+      <class name="testNg.Alerts">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.Alerts@564fabc8]" started-at="2023-03-02T20:45:43 IST" name="setUp" finished-at="2023-03-02T20:45:51 IST" duration-ms="8111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAlerts()[pri:0, instance:testNg.Alerts@564fabc8]" started-at="2023-03-02T20:45:51 IST" name="verifyAlerts" finished-at="2023-03-02T20:45:51 IST" duration-ms="592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlerts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.Alerts@564fabc8]" started-at="2023-03-02T20:45:51 IST" name="tearDown" finished-at="2023-03-02T20:45:52 IST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.Alerts -->
+      <class name="testNg.AltersFrame">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.AltersFrame@8f4ea7c]" started-at="2023-03-02T20:46:42 IST" name="setUp" finished-at="2023-03-02T20:46:51 IST" duration-ms="9031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFrames()[pri:0, instance:testNg.AltersFrame@8f4ea7c]" started-at="2023-03-02T20:46:51 IST" name="verifyFrames" finished-at="2023-03-02T20:46:52 IST" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFrames -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.AltersFrame@8f4ea7c]" started-at="2023-03-02T20:46:52 IST" name="tearDown" finished-at="2023-03-02T20:46:52 IST" duration-ms="480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.AltersFrame -->
+      <class name="testNg.Frame">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.Frame@74fe5c40]" started-at="2023-03-02T20:47:04 IST" name="setUp" finished-at="2023-03-02T20:47:13 IST" duration-ms="9519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFrames()[pri:0, instance:testNg.Frame@74fe5c40]" started-at="2023-03-02T20:47:13 IST" name="verifyFrames" finished-at="2023-03-02T20:47:14 IST" duration-ms="851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFrames -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.Frame@74fe5c40]" started-at="2023-03-02T20:47:14 IST" name="tearDown" finished-at="2023-03-02T20:47:14 IST" duration-ms="513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.Frame -->
+      <class name="testNg.Menuu">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.Menuu@2d7275fc]" started-at="2023-03-02T20:43:40 IST" name="setUp" finished-at="2023-03-02T20:43:50 IST" duration-ms="9836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyMenu()[pri:0, instance:testNg.Menuu@2d7275fc]" started-at="2023-03-02T20:43:50 IST" name="verifyMenu" finished-at="2023-03-02T20:43:50 IST" duration-ms="380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMenu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.Menuu@2d7275fc]" started-at="2023-03-02T20:43:50 IST" name="tearDown" finished-at="2023-03-02T20:43:51 IST" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.Menuu -->
+      <class name="testNg.Interaction">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.Interaction@49ec71f8]" started-at="2023-03-02T20:46:02 IST" name="setUp" finished-at="2023-03-02T20:46:13 IST" duration-ms="10617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyInterations()[pri:0, instance:testNg.Interaction@49ec71f8]" started-at="2023-03-02T20:46:13 IST" name="verifyInterations" finished-at="2023-03-02T20:46:13 IST" duration-ms="408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInterations -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.Interaction@49ec71f8]" started-at="2023-03-02T20:46:13 IST" name="tearDown" finished-at="2023-03-02T20:46:13 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.Interaction -->
+      <class name="testNg.AutoComplete">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.AutoComplete@3ce1e309]" started-at="2023-03-02T20:43:27 IST" name="setUp" finished-at="2023-03-02T20:43:39 IST" duration-ms="12248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAutoComplete()[pri:0, instance:testNg.AutoComplete@3ce1e309]" started-at="2023-03-02T20:43:39 IST" name="verifyAutoComplete" finished-at="2023-03-02T20:43:40 IST" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAutoComplete -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.AutoComplete@3ce1e309]" started-at="2023-03-02T20:43:40 IST" name="tearDown" finished-at="2023-03-02T20:43:40 IST" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.AutoComplete -->
+      <class name="testNg.Accoridan">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.Accoridan@399f45b1]" started-at="2023-03-02T20:43:51 IST" name="setUp" finished-at="2023-03-02T20:44:01 IST" duration-ms="10021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAccordian()[pri:0, instance:testNg.Accoridan@399f45b1]" started-at="2023-03-02T20:44:01 IST" name="verifyAccordian" finished-at="2023-03-02T20:44:02 IST" duration-ms="809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccordian -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.Accoridan@399f45b1]" started-at="2023-03-02T20:44:02 IST" name="tearDown" finished-at="2023-03-02T20:44:02 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.Accoridan -->
+      <class name="testNg.JoinNow">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.JoinNow@1189dd52]" started-at="2023-03-02T20:45:19 IST" name="setUp" finished-at="2023-03-02T20:45:30 IST" duration-ms="11516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyJoinNow()[pri:0, instance:testNg.JoinNow@1189dd52]" started-at="2023-03-02T20:45:30 IST" name="verifyJoinNow" finished-at="2023-03-02T20:45:31 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyJoinNow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.JoinNow@1189dd52]" started-at="2023-03-02T20:45:31 IST" name="tearDown" finished-at="2023-03-02T20:45:31 IST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.JoinNow -->
+      <class name="testNg.DataPicker">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.DataPicker@79e2c065]" started-at="2023-03-02T20:44:28 IST" name="setUp" finished-at="2023-03-02T20:44:39 IST" duration-ms="11727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDatePicker()[pri:0, instance:testNg.DataPicker@79e2c065]" started-at="2023-03-02T20:44:39 IST" name="verifyDatePicker" finished-at="2023-03-02T20:44:40 IST" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDatePicker -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.DataPicker@79e2c065]" started-at="2023-03-02T20:44:40 IST" name="tearDown" finished-at="2023-03-02T20:44:40 IST" duration-ms="486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.DataPicker -->
+      <class name="testNg.DynamicProperties">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.DynamicProperties@3a93b025]" started-at="2023-03-02T20:44:40 IST" name="setUp" finished-at="2023-03-02T20:44:50 IST" duration-ms="9921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDynamicProperties()[pri:0, instance:testNg.DynamicProperties@3a93b025]" started-at="2023-03-02T20:44:50 IST" name="verifyDynamicProperties" finished-at="2023-03-02T20:44:50 IST" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDynamicProperties -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.DynamicProperties@3a93b025]" started-at="2023-03-02T20:44:50 IST" name="tearDown" finished-at="2023-03-02T20:44:51 IST" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.DynamicProperties -->
+      <class name="testNg.ElementCard">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNg.ElementCard@38c6f217]" started-at="2023-03-02T20:44:02 IST" name="setUp" finished-at="2023-03-02T20:44:12 IST" duration-ms="10593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyElementsCard()[pri:0, instance:testNg.ElementCard@38c6f217]" started-at="2023-03-02T20:44:12 IST" name="verifyElementsCard" finished-at="2023-03-02T20:44:13 IST" duration-ms="586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyElementsCard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNg.ElementCard@38c6f217]" started-at="2023-03-02T20:44:13 IST" name="tearDown" finished-at="2023-03-02T20:44:13 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNg.ElementCard -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
